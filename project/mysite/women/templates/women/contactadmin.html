@@ -1,0 +1,23 @@
+{% extends 'women/base.html' %}
+
+{% block content %}
+<ul class="list-articles">
+
+<h2>Customers info: </h2>
+<br>
+{% for t in txt %}
+
+
+</div>
+<h2>Customers e-mail:</h2>
+<p>{{t.email}}</p>
+<h2>Castomers name: </h2>
+<p>{{t.name}}</p>
+<h2>Castomers comment: </h2>
+<p>{{t.content}}</p>
+<br>
+<br>
+<br>
+{% endfor %}
+</ul>
+{% endblock %}
